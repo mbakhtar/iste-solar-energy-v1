@@ -104,7 +104,8 @@ basic.forever(function () {
 Add ``||fwdMotors: set servo1 angle to||`` block and insert 
 ``||Variables:position||`` block in it. This is placed
 after the ``||logic:if then||`` block 
-Also add a ``||basic:pause||`` block and set it to ``||basic:20ms||``
+Also add a ``||basic:pause||`` block and set it to ``||basic:20ms||``.
+This is the final code. Congratulations, you did it!
 ```blocks
 let position = -90
 basic.forever(function () {
@@ -122,24 +123,3 @@ basic.forever(function () {
     }
 })
 ```
-## Step 8 
-This is the final code
-```blocks
-let position = -90
-fwdMotors.servo1.fwdSetEnabled(false)
-basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
-        basic.showIcon(IconNames.Target)
-        fwdMotors.servo1.fwdSetEnabled(false)
-    } else {
-        basic.showIcon(IconNames.SmallDiamond)
-        position += 10
-        if (position > 90) {
-            position = -90
-        }
-        fwdMotors.servo1.fwdSetAngle(position)
-        basic.pause(20)
-    }
-})
-```
-Congratulations, you did it!
