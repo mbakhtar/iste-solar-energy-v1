@@ -17,15 +17,6 @@ To edit this repository in MakeCode.
 * click on **Import** then click on **Import URL**
 * paste **https://github.com/mbakhtar/iste-solar-energy-v1** and click import
 
-## Blocks preview
-
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/mbakhtar/iste-solar-energy-v1/raw/master/.github/makecode/blocks.png)
-
-#### Metadata (used for search, rendering)
-
 * for PXT/microbit
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
 
@@ -136,7 +127,8 @@ basic.forever(function () {
 Add ``||fwdMotors: set servo1 angle to||`` block and insert 
 ``||Variables:position||`` block in it. This is placed
 after the ``||logic:if then||`` block 
-Also add a ``||basic:pause||`` block and set it to ``||basic:20ms||``
+Also add a ``||basic:pause||`` block and set it to ``||basic:20ms||``.
+This is the final code. Congratulations, you did it!
 ```blocks
 let position = -90
 basic.forever(function () {
@@ -154,26 +146,12 @@ basic.forever(function () {
     }
 })
 ```
-## Step 8 
-This is the final code
-```blocks
-let position = -90
-fwdMotors.servo1.fwdSetEnabled(false)
-basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
-        basic.showIcon(IconNames.Target)
-        fwdMotors.servo1.fwdSetEnabled(false)
-    } else {
-        basic.showIcon(IconNames.SmallDiamond)
-        position += 10
-        if (position > 90) {
-            position = -90
-        }
-        fwdMotors.servo1.fwdSetAngle(position)
-        basic.pause(20)
-    }
-})
-```
-Congratulations, you did it!
+## Blocks preview
 
+This image shows the blocks code from the last commit in master.
+This image may take a few minutes to refresh.
+
+![A rendered view of the blocks](https://github.com/mbakhtar/iste-solar-energy-v1/raw/master/.github/makecode/blocks.png)
+
+#### Metadata (used for search, rendering)
 
