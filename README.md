@@ -4,7 +4,7 @@
 
 This repository can be added as an **extension** in MakeCode.
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
+* open [Solar Energy Tutorial v1](https://makecode.microbit.org/#tutorial:github:mbakhtar/iste-solar-energy-v1/solarenergy)
 * click on **New Project**
 * click on **Extensions** under the gearwheel menu
 * search for **https://github.com/mbakhtar/iste-solar-energy-v1** and import
