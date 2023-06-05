@@ -7,8 +7,9 @@ solar=github:climate-action-kits/pxt-fwd-edu
 Plug your USB cable into the micro:bit and insert it into the 
 Climate Action Kit board. Click on the button to the right of 
 download and follow the steps to pair your micro:bit.
-![pair microbit](https://github.com/mbakhtar/iste-solar-energy-v1/assets/109742973/d2cd404c-58e7-4462-ae22-8859cc74273e)
 ![breakout image](https://raw.githubusercontent.com/mbakhtar/wind-turbine-lesson-tutorial/master/breakout-resized.png)
+![pair microbit](https://github.com/mbakhtar/iste-solar-energy-v1/assets/109742973/d2cd404c-58e7-4462-ae22-8859cc74273e)
+
 
 ## Step 2 
 Create a ``||Variables:Variable||`` called ``||Variables:position||``
