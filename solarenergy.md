@@ -13,7 +13,7 @@ Create a ``||Variables:Variable||`` called ``||Variables:position||``
 and nest ``||Variables:set position to -90||`` 
 under ``||basic:on start||`` block.
 Now nest an ``||logic:If true then else||`` 
-block under the ``||basic:forever||`` loop
+block under the ``||basic:forever||`` loop.
 ```blocks
 let position = -90
 basic.forever(function(){
@@ -25,10 +25,10 @@ basic.forever(function(){
 ```
 ## Step 3 
 Add a ``||logic:comparison block||`` from the 
-``||logic:Logic drawer||`` place it in the true
+``||logic:Logic drawer||``. Place it in the true
 condition of the ``||logic: if then else||`` loop.
 Insert the block ``||fwdSensors:solar1 light level %||`` on the left side
-and insert ``||75||`` on the right side of the ``||logic:comparison block||``
+and insert ``||75||`` on the right side of the ``||logic:comparison block||``.
 ```blocks
 let position = -90
 basic.forever(function(){
@@ -43,7 +43,7 @@ Under the true condition, add the ``||basic:show icon||`` block and select the `
 To stop the ``||Solar Array||`` from scanning 
 for the sunlight, go to ``||fwdMotors:set servo1 off||``. 
 This indicates the ``||Solar Array||`` 
-is facing the sun and receiving maximum light
+is facing the sun and receiving maximum light.
 ```blocks
 let position = -90
 basic.forever(function () {
@@ -55,13 +55,12 @@ basic.forever(function () {
 })
 ```
 ## Step 5 
-If the condition is false add ``||basic:show icon||`` block under the 
+If the condition is false, add ``||basic:show icon||`` block under the 
 ``||logic:else||`` and select ``||basic: small diamond icon||``.
-Add ``||Variables:change position by 10||`` block under 
-the small diamond icon.
-Add ``||logic:if true then||`` block under the 
+Add the ``||Variables:change position by 10||`` block under this icon.
+Add the``||logic:if true then||`` block under the 
 ``||logic:else||`` condition below the 
-``||Variables:change position by 10||``
+``||Variables:change position by 10||``.
 ```blocks
 let position = -90
 basic.forever(function () {
@@ -81,7 +80,7 @@ For the true condition, replace it by a ``||logic:comparison||`` block.
 For the comparison, add ``||Variables:position||`` on the left side and 
 add ``||90||``to the right side.
 For the true condition, add ``||Variables:set position to -90||`` 
-nested under the ``||logic:if position>90 then||``
+nested under the ``||logic:if position>90 then||``.
 ```blocks
 let position = -90
 basic.forever(function () {
@@ -102,7 +101,7 @@ basic.forever(function () {
 ## Step 7 
 Add ``||fwdMotors: set servo1 angle to||`` block and add the 
 ``||Variables:position||`` block into it. This is placed
-after the ``||logic:if then||`` block 
+after the ``||logic:if then||`` block.
 Add a ``||basic:pause||`` block and set it to ``||basic:20ms||``.
 This is the final code. Congratulations, you made it! Download your code and test it!
 ```blocks
