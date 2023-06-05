@@ -103,7 +103,7 @@ Add ``||fwdMotors: set servo1 angle to||`` block and add the
 ``||Variables:position||`` block into it. This is placed
 after the ``||logic:if then||`` block.
 Add a ``||basic:pause||`` block and set it to ``||basic:20ms||``.
-This is the final code. Congratulations, you made it! Download your code and test it!
+Congratulations on completing your Solar Panel Project! - Go back to the lesson for more activities and extensions.
 ```blocks
 let position = -90
 basic.forever(function () {
