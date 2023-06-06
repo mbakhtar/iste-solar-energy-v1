@@ -5,13 +5,14 @@ solar=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Step 1 @showdialog
 Plug your USB cable into the micro:bit and insert it into the 
-Climate Action Kit board. Click on the button to the right of 
-download and follow the steps to pair your micro:bit.
-![breakout image](https://raw.githubusercontent.com/mbakhtar/wind-turbine-lesson-tutorial/master/breakout-resized.png)
-![pair microbit](https://github.com/mbakhtar/iste-solar-energy-v1/assets/109742973/d2cd404c-58e7-4462-ae22-8859cc74273e)
+Climate Action Kit board. 
+![breakout board](https://raw.githubusercontent.com/mbakhtar/wind-turbine-lesson-tutorial/master/breakout-resized.png)
 
+## Step 2 @showhint
+Click on the button to the right of download and follow the steps to pair your micro:bit.
+![pair gif](https://raw.githubusercontent.com/mbakhtar/iste-electric-vehicle-v1/master/pair%20microbit-280x203.gif)
 
-## Step 2 
+## Step 3 
 Create a ``||Variables:Variable||`` called ``||Variables:position||``
 and nest ``||Variables:set position to -90||`` 
 under ``||basic:on start||`` block.
@@ -26,7 +27,7 @@ basic.forever(function(){
     }
 })
 ```
-## Step 3 
+## Step 4 
 Add a ``||logic:comparison block||`` from the 
 ``||logic:Logic drawer||``. Place it in the true
 condition of the ``||logic: if then else||`` loop.
@@ -41,7 +42,7 @@ basic.forever(function(){
     }
 })
 ```
-## Step 4 
+## Step 5 
 Under the true condition, add the ``||basic:show icon||`` block and select the ``||basic:target||``icon.
 To stop the ``||Solar Array||`` from scanning 
 for the sunlight, go to ``||fwdMotors:set servo1 off||``. 
@@ -57,7 +58,7 @@ basic.forever(function () {
     else {}
 })
 ```
-## Step 5 
+## Step 6 
 If the condition is false, add ``||basic:show icon||`` block under the 
 ``||logic:else||`` and select ``||basic: small diamond icon||``.
 Add the ``||Variables:change position by 10||`` block under this icon.
@@ -78,7 +79,7 @@ basic.forever(function () {
         }
 })
 ```
-## Step 6 
+## Step 7 
 For the true condition, replace it by a ``||logic:comparison||`` block.
 For the comparison, add ``||Variables:position||`` on the left side and 
 add ``||90||``to the right side.
@@ -101,12 +102,11 @@ basic.forever(function () {
 })
 ```
 
-## Step 7 
+## Step 8
 Add ``||fwdMotors: set servo1 angle to||`` block and add the 
 ``||Variables:position||`` block into it. This is placed
 after the ``||logic:if then||`` block.
 Add a ``||basic:pause||`` block and set it to ``||basic:20ms||``.
-Congratulations on completing your Solar Panel Project! - Go back to the lesson for more activities and extensions.
 ```blocks
 let position = -90
 basic.forever(function () {
@@ -124,3 +124,6 @@ basic.forever(function () {
     }
 })
 ```
+## Step 9
+Download your code to test your Solar Panel Project.
+Congratulations on completing your Solar Panel Project! - Go back to the lesson for more activities and extensions.
