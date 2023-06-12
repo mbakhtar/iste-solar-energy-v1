@@ -5,7 +5,7 @@ solar=github:climate-action-kits/pxt-fwd-edu
 ```
 ## @showdialog
 Welcome to the Solar Panel Coding Tutorial
-![built project](https://raw.githubusercontent.com/mbakhtar/iste-solar-energy-v1/master/project%20-%20solar.png)
+![built project](https://raw.githubusercontent.com/mbakhtar/iste-solar-energy-v1/master/project%20-%20solar-400.png)
 
 ## Step 1 @showdialog
 Plug your USB cable into the micro:bit and insert it into the 
