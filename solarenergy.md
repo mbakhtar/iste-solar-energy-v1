@@ -307,3 +307,4 @@ basic.forever(function () {
 ## Step 22
 ``|Download|``and test your code.
 Congratulations on completing your Solar Panel Project! - Go back to the lesson for more activities and extensions.
+Click [here](https://forwardedu.com/course/solar-energy/) to go back to the lesson.
