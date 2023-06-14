@@ -3,29 +3,29 @@
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 solar=github:climate-action-kits/pxt-fwd-edu
 ```
-## @showdialog
+## Step 1 @showdialog
 Welcome to the Solar Panel Coding Tutorial
 ![built project](https://raw.githubusercontent.com/mbakhtar/iste-solar-energy-v1/master/project%20-%20solar-400.png)
 
-## Step 1 @showdialog
+## Step 2 @showdialog
 Plug your USB cable into the micro:bit and insert it into the 
 Climate Action Kit board. 
 ![breakout board](https://raw.githubusercontent.com/mbakhtar/wind-turbine-lesson-tutorial/master/breakout-resized.png)
 
-## Step 2 @showhint
+## Step 3 @showhint
 Click three dots besides ``|Download|`` button and follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/mbakhtar/iste-electric-vehicle-v1/master/pair%20microbit-280x203.gif)
 
-## Step 3 
+## Step 4 
 Click ``||Variables:Variables||``. Click on |Make a Variable| to
 create a new ``||Variables:Variable||``.
 Name it ``||Variables:position||``.
 
-## Step 4
+## Step 5
 Inside ``||Variables:Variables||`` there is ``||Variables:position||``
 and more blocks.
 
-## Step 5 
+## Step 6 
 Click ``||Variables:Variables||``. Drag and drop
 ``||Variables:set position to 0||`` inside ``||basic:on start||`` block. 
 Change ``||Variables:0||`` to ``||Variables:-90||``.
@@ -34,7 +34,7 @@ let position = -90
 basic.forever(function(){
 })
 ```
-## Step 6 
+## Step 7 
 Click ``||logic:Logic||`` drag and drop ``||logic:If true then else||``
 block inside the ``||basic:forever||`` loop.
 ```blocks
@@ -47,8 +47,8 @@ basic.forever(function(){
 })
 ```
 
-## Step 7 
-Click ``||logic:Logic||`` drag and drop ``||logic:comparison block||`` to
+## Step 8 
+Click ``||logic:Logic||`` drag and drop ``||logic:comparison block||`` ``||logic: greater than >||`` to
 replace ``||logic:true||`` condition of the ``||logic: if then else||`` loop.
 ```blocks
 let position = -90
@@ -59,7 +59,7 @@ basic.forever(function(){
     }
 })
 ```
-## Step 8 
+## Step 9 
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:solar1 light level %||``
 block to replace ``||0||`` on left side of the ``||logic:comparison||`` block.
 ```blocks
@@ -71,7 +71,7 @@ basic.forever(function(){
     }
 })
 ```
-## Step 9
+## Step 10
 Click right side of the ``||logic:comparison||`` block.
 Change ``||0||`` to ``||75||``.
 ```blocks
@@ -83,7 +83,7 @@ basic.forever(function(){
     }
 })
 ```
-## Step 10 
+## Step 11 
 Click ``||basic:Basic||`` drag and drop ``||basic:show icon||`` block 
 inside ``||logic:if true then||`` condition. 
 Select ``||basic:target||`` icon.
@@ -96,7 +96,7 @@ basic.forever(function () {
     else {}
 })
 ```
-## Step 11
+## Step 12
 Click ``||fwdMotors:Motors||`` drag and drop 
 ``||fwdMotors:set servo1 off||`` block under 
 ``||basic:show icon target||`` block. 
@@ -110,7 +110,7 @@ basic.forever(function () {
     else {}
 })
 ```
-## Step 12 
+## Step 13 
 Click ``||basic:Basic||`` drag and drop ``||basic:show icon||`` block
 inside ``||logic:else||`` condition.
 Select ``||basic: small diamond icon||``.
@@ -125,7 +125,7 @@ basic.forever(function () {
         }
 })
 ```
-## Step 13
+## Step 14
 Click ``||Variables:Variables||`` drag and drop 
 ``||Variables:change position by 1||`` block 
 under ``||basic:show icon small diamond||`` block.
@@ -141,37 +141,6 @@ basic.forever(function () {
         }
 })
 ```
-## Step 14
-Change the value of ``||variables:change position by 1||`` to ``||10||``.
-```blocks
-let position = -90
-basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
-        basic.showIcon(IconNames.Target)
-        fwdMotors.servo1.fwdSetEnabled(false)
-    } else {
-        basic.showIcon(IconNames.SmallDiamond)
-        position += 10
-        }
-})
-```
-## Step 15
-Click ``||logic:Logic||`` drag and drop ``||logic:if true then||``
-block under the ``||Variables:change position by 1||`` block. 
-```blocks
-let position = -90
-basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
-        basic.showIcon(IconNames.Target)
-        fwdMotors.servo1.fwdSetEnabled(false)
-    } else {
-        basic.showIcon(IconNames.SmallDiamond)
-        position += 10
-        if (true) {
-            }
-        }
-})
-```
 ## Step 15
 Change the value of ``||variables:change position by 1||`` to ``||10||``.
 ```blocks
@@ -183,14 +152,28 @@ basic.forever(function () {
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
-        if (true) {
-            }
         }
 })
 ```
-
 ## Step 16
-Click ``||logic:Logic||`` drag and drop ``||logic:comparison||``
+Click ``||logic:Logic||`` drag and drop ``||logic:if true then||``
+block under the ``||Variables:change position by 10||`` block. 
+```blocks
+let position = -90
+basic.forever(function () {
+    if (fwdSensors.solar1.fwdLightLevel() > 75) {
+        basic.showIcon(IconNames.Target)
+        fwdMotors.servo1.fwdSetEnabled(false)
+    } else {
+        basic.showIcon(IconNames.SmallDiamond)
+        position += 10
+        if (true) {
+            }
+        }
+})
+```
+## Step 17
+Click ``||logic:Logic||`` drag and drop ``||logic:comparison||`` ``||logic: greater than >||``
 block to replace ``||logic:true||`` condition of ``||logic: if true then||``
 block.
 ```blocks
@@ -201,14 +184,14 @@ basic.forever(function () {
         fwdMotors.servo1.fwdSetEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
-        position += 1
+        position += 10
         if (0 > 0) {
                 }
         
     }
 })
 ```
-## Step 17
+## Step 18
 Click ``||Variables:Variables||`` drag and drop 
 ``||Variables:position||`` block on left side of the 
 ``||logic:comparison||`` block. 
@@ -220,14 +203,14 @@ basic.forever(function () {
         fwdMotors.servo1.fwdSetEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
-        position += 1
+        position += 10
         if (position > 0) {
         }
         
     }
 })
 ```
-## Step 18
+## Step 19
 Change ``||0||`` to ``||90||`` on right side of the ``||logic:comparison||``
 block. 
 ```blocks
@@ -238,14 +221,14 @@ basic.forever(function () {
         fwdMotors.servo1.fwdSetEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
-        position += 1
+        position += 10
         if (position > 90) {
         }
         
     }
 })
 ```
-## Step 19
+## Step 20
 Click ``||Variables:Variables||`` drag and drop ``||Variables:set position to 0||`` 
 inside ``||logic:if||`` ``||variables:position||`` ``||logic: > 90 then||`` block.
 ```blocks
@@ -256,7 +239,7 @@ basic.forever(function () {
         fwdMotors.servo1.fwdSetEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
-        position += 1
+        position += 10
         if (position > 90) {
         position = 0
         }
@@ -264,8 +247,10 @@ basic.forever(function () {
     }
 })
 ```
-## Step 20
-Change the value of ``||variables:change position by 1||`` to ``||10||``.
+
+## Step 21
+Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set servo 0 '||``
+block under ``||logic:if then||`` condition.
 ```blocks
 let position = -90
 basic.forever(function () {
@@ -278,15 +263,33 @@ basic.forever(function () {
         if (position > 90) {
             position = -90
         }
-        
+        fwdMotors.servo1.fwdSetAngle(0)
     }
 })
 ```
-## Step 21
-Click on ``||fwdMotors:Motors||`` drawer and find ``||fwdMotors:set servo 0 '||`` block.
-Drag and drop it 
-Click on the ``||basic:Basic||`` drawer and add a ``||basic:pause||`` block
-and set it to ``||basic:20ms||``.
+## Step 22
+Click ``||Variables:Variables||`` drag and drop ``||Variables:position||`` block 
+to replace ``||0||`` in ``||fwdMotors:set servo 1 to 0 '||`` block.
+```blocks
+let position = -90
+basic.forever(function () {
+    if (fwdSensors.solar1.fwdLightLevel() > 75) {
+        basic.showIcon(IconNames.Target)
+        fwdMotors.servo1.fwdSetEnabled(false)
+    } else {
+        basic.showIcon(IconNames.SmallDiamond)
+        position += 10
+        if (position > 90) {
+            position = -90
+        }
+        fwdMotors.servo1.fwdSetAngle(position)
+        }
+})
+```
+## Step 23
+Click ``||basic:Basic||`` drag and drop ``||basic:pause||`` block under
+``||fwdMotors:set servo1 to||`` ``||Variables:position||`` block. Change
+``||basic:(ms) 100||`` to ``||basic:(ms) 20||``.
 ```blocks
 let position = -90
 basic.forever(function () {
@@ -304,7 +307,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 22
+## Step 24
 ``|Download|``and test your code.
 Congratulations on completing your Solar Panel Project! - Go back to the lesson for more activities and extensions.
 Click [here](https://forwardedu.com/course/solar-energy/) to go back to the lesson.
