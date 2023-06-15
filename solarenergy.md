@@ -175,9 +175,9 @@ basic.forever(function () {
 })
 ```
 ## Step 18
-Click ``||logic:Logic||`` drag and drop ``||logic:comparison||`` ``||logic: greater than >||``
+Click ``||logic:Logic||`` drag and drop ``||logic:comparison||`` ``||logic: less than <||``
 block to replace ``||logic:true||`` condition of ``||logic: if true then||``
-block.
+block. Change ``||logic: less than < to greater than >||``.
 ```blocks
 let position = -90
 basic.forever(function () {
@@ -312,4 +312,3 @@ basic.forever(function () {
 ## Step 25
 ``|Download|``and test your code.
 Congratulations on completing your Solar Panel Project! - Go back to the lesson for more activities and extensions.
-Click [here](https://forwardedu.com/course/solar-energy/) to go back to the lesson.
