@@ -75,11 +75,11 @@ basic.forever(function(){
 ```
 ## Step 11
 Click right side of the ``||logic:comparison||`` block.
-Change ``||0||`` to ``||75||``.
+Change ``||0||`` to ``||90||``.
 ```blocks
 let position = -90
 basic.forever(function(){
-    if(fwdSensors.solar1.fwdLightLevel() > 75){
+    if(fwdSensors.solar1.fwdLightLevel() > 90){
     }
     else{
     }
@@ -92,7 +92,7 @@ Select ``||basic:target||`` icon.
 ```blocks
 let position = -90
 basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
+    if (fwdSensors.solar1.fwdLightLevel() > 90) {
     basic.showIcon(IconNames.Target)
     } 
     else {}
@@ -105,7 +105,7 @@ Click ``||fwdMotors:Motors||`` drag and drop
 ```blocks
 let position = -90
 basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
+    if (fwdSensors.solar1.fwdLightLevel() > 90) {
     basic.showIcon(IconNames.Target)
     fwdMotors.servo1.fwdSetEnabled(false)
     } 
@@ -119,7 +119,7 @@ Select ``||basic: small diamond icon||``.
 ```blocks
 let position = -90
 basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
+    if (fwdSensors.solar1.fwdLightLevel() > 90) {
         basic.showIcon(IconNames.Target)
         fwdMotors.servo1.fwdSetEnabled(false)
     } else {
@@ -134,7 +134,7 @@ under ``||basic:show icon small diamond||`` block.
 ```blocks
 let position = -90
 basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
+    if (fwdSensors.solar1.fwdLightLevel() > 90) {
         basic.showIcon(IconNames.Target)
         fwdMotors.servo1.fwdSetEnabled(false)
     } else {
@@ -148,7 +148,7 @@ Change the value of ``||variables:change position by 1||`` to ``||10||``.
 ```blocks
 let position = -90
 basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
+    if (fwdSensors.solar1.fwdLightLevel() > 90) {
         basic.showIcon(IconNames.Target)
         fwdMotors.servo1.fwdSetEnabled(false)
     } else {
@@ -163,7 +163,7 @@ block under the ``||Variables:change position by 10||`` block.
 ```blocks
 let position = -90
 basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
+    if (fwdSensors.solar1.fwdLightLevel() > 90) {
         basic.showIcon(IconNames.Target)
         fwdMotors.servo1.fwdSetEnabled(false)
     } else {
@@ -181,7 +181,7 @@ block. Change ``||logic: less than < to greater than >||``.
 ```blocks
 let position = -90
 basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
+    if (fwdSensors.solar1.fwdLightLevel() > 90) {
         basic.showIcon(IconNames.Target)
         fwdMotors.servo1.fwdSetEnabled(false)
     } else {
@@ -200,7 +200,7 @@ Click ``||Variables:Variables||`` drag and drop
 ```blocks
 let position = -90
 basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
+    if (fwdSensors.solar1.fwdLightLevel() > 90) {
         basic.showIcon(IconNames.Target)
         fwdMotors.servo1.fwdSetEnabled(false)
     } else {
@@ -218,7 +218,7 @@ block.
 ```blocks
 let position = -90
 basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
+    if (fwdSensors.solar1.fwdLightLevel() > 90) {
         basic.showIcon(IconNames.Target)
         fwdMotors.servo1.fwdSetEnabled(false)
     } else {
@@ -236,7 +236,7 @@ inside ``||logic:if||`` ``||variables:position||`` ``||logic: > 90 then||`` bloc
 ```blocks
 let position = -90
 basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
+    if (fwdSensors.solar1.fwdLightLevel() > 90) {
         basic.showIcon(IconNames.Target)
         fwdMotors.servo1.fwdSetEnabled(false)
     } else {
@@ -256,7 +256,7 @@ block under ``||logic:if then||`` condition.
 ```blocks
 let position = -90
 basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
+    if (fwdSensors.solar1.fwdLightLevel() > 90) {
         basic.showIcon(IconNames.Target)
         fwdMotors.servo1.fwdSetEnabled(false)
     } else {
@@ -275,7 +275,7 @@ to replace ``||0||`` in ``||fwdMotors:set servo 1 to 0 '||`` block.
 ```blocks
 let position = -90
 basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
+    if (fwdSensors.solar1.fwdLightLevel() > 90) {
         basic.showIcon(IconNames.Target)
         fwdMotors.servo1.fwdSetEnabled(false)
     } else {
@@ -295,7 +295,7 @@ Click ``||basic:Basic||`` drag and drop ``||basic:pause||`` block under
 ```blocks
 let position = -90
 basic.forever(function () {
-    if (fwdSensors.solar1.fwdLightLevel() > 75) {
+    if (fwdSensors.solar1.fwdLightLevel() > 90) {
         basic.showIcon(IconNames.Target)
         fwdMotors.servo1.fwdSetEnabled(false)
     } else {
@@ -311,4 +311,4 @@ basic.forever(function () {
 ```
 ## Step 25
 ``|Download|``and test your code.
-Congratulations on completing your Solar Panel Project! - Go back to the lesson for more activities and extensions.
+Congratulations on completing your Solar Panel Project! - Go back to the lesson for more activities and extensions. Want to check your code click [here](https://makecode.microbit.org/S90884-23579-70629-38871).
